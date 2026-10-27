@@ -1,0 +1,9 @@
+{
+  "ecosystem": "rust",
+  "manifest_sha256": "10eccb5f3c2ffbf0a562477f823c8dc5f0d26d98c8699fb00b02f87205952607",
+  "package": "availkit-sdk",
+  "schema": 1,
+  "source_commit": "fdfbd4faf283d9cedf5a40aa570ef9ae6458bcc8",
+  "tag": "v0.1.1",
+  "version": "0.1.1"
+}
