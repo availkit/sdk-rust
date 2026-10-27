@@ -1,0 +1,630 @@
+{
+  "createResource": {
+    "request": {
+      "name": "Example",
+      "timeZone": "UTC",
+      "capacity": 1
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "timeZone": "UTC",
+      "capacity": 1,
+      "archived": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "listResources": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {}
+  },
+  "setHours": {
+    "request": {
+      "windows": []
+    },
+    "response": {
+      "windows": []
+    },
+    "query": {},
+    "ids": {
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "getHours": {
+    "request": null,
+    "response": {
+      "windows": []
+    },
+    "query": {},
+    "ids": {
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "createOffering": {
+    "request": {
+      "name": "Example",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "durationMinutes": 1
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "durationMinutes": 1,
+      "archived": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "listOfferings": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {}
+  },
+  "availability": {
+    "request": null,
+    "response": {
+      "slots": []
+    },
+    "query": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "from": "2030-01-01T09:00:00Z",
+      "to": "2030-01-02T09:00:00Z"
+    },
+    "ids": {}
+  },
+  "book": {
+    "request": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z"
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "confirmed"
+    },
+    "query": {},
+    "ids": {}
+  },
+  "listBookings": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {}
+  },
+  "cancel": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "cancelled"
+    },
+    "query": {},
+    "ids": {
+      "bookingId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "events": {
+    "request": null,
+    "response": {
+      "events": [],
+      "nextAfter": 0,
+      "retentionFloor": 0,
+      "highWater": 0
+    },
+    "query": {},
+    "ids": {}
+  },
+  "getResource": {
+    "request": null,
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "timeZone": "UTC",
+      "capacity": 1,
+      "archived": false
+    },
+    "query": {},
+    "ids": {
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "updateResource": {
+    "request": {
+      "name": "Example",
+      "timeZone": "UTC",
+      "capacity": 1
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "timeZone": "UTC",
+      "capacity": 1,
+      "archived": false
+    },
+    "query": {},
+    "ids": {
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "getOffering": {
+    "request": null,
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "durationMinutes": 1,
+      "archived": false
+    },
+    "query": {},
+    "ids": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "updateOffering": {
+    "request": {
+      "name": "Example",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "durationMinutes": 1
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "durationMinutes": 1,
+      "archived": false
+    },
+    "query": {},
+    "ids": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "getBooking": {
+    "request": null,
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "confirmed"
+    },
+    "query": {},
+    "ids": {
+      "bookingId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "createWebhook": {
+    "request": {
+      "url": "https://receiver.example.invalid/hook"
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "url": "https://receiver.example.invalid/hook",
+      "enabled": false,
+      "createdAt": "2030-01-01T09:00:00Z",
+      "signingSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "query": {},
+    "ids": {}
+  },
+  "listWebhooks": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {}
+  },
+  "disableWebhook": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "url": "https://receiver.example.invalid/hook",
+      "enabled": false,
+      "createdAt": "2030-01-01T09:00:00Z"
+    },
+    "query": {},
+    "ids": {
+      "subscriptionId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "listWebhookDeliveries": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {
+      "subscriptionId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "getUsage": {
+    "request": null,
+    "response": {
+      "asOf": "2030-01-01T09:00:00Z",
+      "period": {
+        "start": "2030-01-01T00:00:00Z",
+        "end": "2030-02-01T00:00:00Z"
+      },
+      "counters": {
+        "monthlyBookingCreates": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "catalogObjects": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "bookingRecords": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "committedEvents": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "webhookSubscriptions": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "webhookDeliveries": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "liveReplays": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        },
+        "customerRecords": {
+          "used": 0,
+          "limit": 100,
+          "remaining": 100
+        }
+      }
+    },
+    "query": {},
+    "ids": {}
+  },
+  "rescheduleBooking": {
+    "request": {
+      "expectedStart": "2030-01-01T09:00:00Z",
+      "start": "2030-01-01T09:00:00Z"
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "confirmed"
+    },
+    "query": {},
+    "ids": {
+      "bookingId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "archiveResource": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "timeZone": "UTC",
+      "capacity": 1,
+      "archived": true
+    },
+    "query": {},
+    "ids": {
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "archiveOffering": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "name": "Example",
+      "resourceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "durationMinutes": 1,
+      "archived": true
+    },
+    "query": {},
+    "ids": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "pruneHistory": {
+    "request": {
+      "kind": "events",
+      "limit": 1
+    },
+    "response": {
+      "asOf": "2030-01-01T09:00:00Z",
+      "cutoff": "2029-12-02T09:00:00Z",
+      "deleted": 0,
+      "hasMore": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "createCustomer": {
+    "request": {
+      "displayName": "Example"
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "displayName": "Example",
+      "email": null,
+      "phone": null,
+      "archived": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "listCustomers": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {}
+  },
+  "getCustomer": {
+    "request": null,
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "displayName": "Example",
+      "email": "test@example.invalid",
+      "phone": "+1234",
+      "archived": false
+    },
+    "query": {},
+    "ids": {
+      "customerId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "replaceCustomer": {
+    "request": {
+      "displayName": "Example"
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "displayName": "Example",
+      "email": null,
+      "phone": null,
+      "archived": false
+    },
+    "query": {},
+    "ids": {
+      "customerId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "archiveCustomer": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "displayName": "Example",
+      "email": "test@example.invalid",
+      "phone": "+1234",
+      "archived": true
+    },
+    "query": {},
+    "ids": {
+      "customerId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "eraseCustomer": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "erased": true
+    },
+    "query": {},
+    "ids": {
+      "customerId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "pruneExpiredReplays": {
+    "request": {
+      "limit": 1
+    },
+    "response": {
+      "asOf": "2030-01-01T09:00:00Z",
+      "deleted": 0,
+      "hasMore": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "getPublicPage": {
+    "request": null,
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "title": "Example",
+      "environment": "test"
+    },
+    "query": {},
+    "ids": {}
+  },
+  "listPublicOfferings": {
+    "request": null,
+    "response": {
+      "items": [],
+      "nextAfter": null
+    },
+    "query": {},
+    "ids": {}
+  },
+  "publicAvailability": {
+    "request": null,
+    "response": {
+      "slots": []
+    },
+    "query": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "from": "2030-01-01T09:00:00Z",
+      "to": "2030-01-02T09:00:00Z"
+    },
+    "ids": {}
+  },
+  "bookPublic": {
+    "request": {
+      "offeringId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "contact": {
+        "displayName": "Example"
+      }
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "confirmed",
+      "offering": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "name": "Example",
+        "durationMinutes": 1,
+        "timeZone": "UTC"
+      },
+      "page": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "title": "Example",
+        "environment": "test"
+      },
+      "pageEnabled": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "getPublicBooking": {
+    "request": null,
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "confirmed",
+      "offering": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "name": "Example",
+        "durationMinutes": 1,
+        "timeZone": "UTC"
+      },
+      "page": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "title": "Example",
+        "environment": "test"
+      },
+      "pageEnabled": false
+    },
+    "query": {},
+    "ids": {
+      "bookingId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "cancelPublicBooking": {
+    "request": {},
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "cancelled",
+      "offering": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "name": "Example",
+        "durationMinutes": 1,
+        "timeZone": "UTC"
+      },
+      "page": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "title": "Example",
+        "environment": "test"
+      },
+      "pageEnabled": false
+    },
+    "query": {},
+    "ids": {
+      "bookingId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "reschedulePublicBooking": {
+    "request": {
+      "expectedStart": "2030-01-01T09:00:00Z",
+      "start": "2030-01-01T09:00:00Z"
+    },
+    "response": {
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "start": "2030-01-01T09:00:00Z",
+      "end": "2030-01-01T09:30:00Z",
+      "status": "confirmed",
+      "offering": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "name": "Example",
+        "durationMinutes": 1,
+        "timeZone": "UTC"
+      },
+      "page": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "title": "Example",
+        "environment": "test"
+      },
+      "pageEnabled": false
+    },
+    "query": {},
+    "ids": {
+      "bookingId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "getBookingPage": {
+    "request": null,
+    "response": {
+      "pageId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "title": "Example",
+      "enabled": false,
+      "needsRepublish": false
+    },
+    "query": {},
+    "ids": {}
+  },
+  "replaceBookingPage": {
+    "request": {
+      "title": "Example",
+      "enabled": false
+    },
+    "response": {
+      "pageId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "title": "Example",
+      "enabled": false,
+      "needsRepublish": false
+    },
+    "query": {},
+    "ids": {}
+  }
+}

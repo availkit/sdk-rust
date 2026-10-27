@@ -1,0 +1,14 @@
+{
+  "version": "0.1.1",
+  "supported": "Rust 1.90+ on Unix; Tokio 1.x",
+  "tested": [
+    "1.90.0"
+  ],
+  "dependencies": "Pinned Cargo.toml/Cargo.lock; no private app crate dependency",
+  "authority": "34 trusted workspace +7 public operations; no native account/passkey APIs",
+  "verified_platforms": [
+    "Linux x86_64"
+  ],
+  "releaseEvidence": "https://github.com/availkit/sdk-rust/releases/tag/v0.1.1",
+  "verificationScope": "Supported runtimes are compatibility targets. Listed tested toolchains describe finite native checks; installed-consumer, service, mobile and distribution evidence is recorded separately in dated release notes. Source presence does not establish registry availability."
+}
